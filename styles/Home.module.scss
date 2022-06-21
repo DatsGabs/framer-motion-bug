@@ -1,0 +1,26 @@
+.featured {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product {
+        min-width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        position: relative;
+
+        span {
+            max-width: 100% !important;
+            max-height: 100% !important;
+        }
+    }
+}
